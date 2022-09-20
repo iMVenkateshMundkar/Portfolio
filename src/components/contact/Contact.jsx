@@ -1,42 +1,55 @@
-import "./contact.scss";
-import { httpLinksArray } from "./httplinks";
+import React from "react";
+import "./Contact.css";
+import { VscGithub } from "react-icons/vsc";
+import { CgMail } from "react-icons/cg";
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { ThemeContext } from "../../Context/theme";
+import { Twitter } from "@material-ui/icons";
 
-export default function Contact() {
-	return (
-		<div className="contact" id="contact">
-			<div className="wrapper">
-				<div className="left">
-					<img src="assets/handshake-blue.svg" alt="" />
-				</div>
-				<div className="right">
-					<h2>Want to say hi?</h2>
-					<p>Ping me a message or an email and I'll respond ASAP :)</p>
+import { FaLinkedin } from "react-icons/fa";
+export const Contact = () => {
+  const [{ themename }] = React.useContext(ThemeContext);
 
-					<span className="contactSpan">
-						{httpLinksArray.map((oneLink) => {
-							const { id, link, icon } = oneLink;
-							return (
-								<a key={id} rel="noreferrer" target="_blank" href={link}>
-									<img src={icon} />
-								</a>
-							);
-						})}
-					</span>
-				</div>
-			</div>
-
-			<footer>
-				<p>
-					Created By :{" "}
-					<a
-						rel="noreferrer"
-						target="_blank"
-						href="https://youtu.be/7WwtzsSHdpI"
-					>
-						Venkatesh Mundkar
-					</a>
-				</p>
-			</footer>
-		</div>
-	);
-}
+  return (
+    <>
+      <div className="section">
+        <h2 className="section__title" data-aos="fade-right">
+          Get in <span className="different">Touch</span>
+        </h2>
+        <div className={"contactcontainer " + themename} data-aos="fade-right">
+          <a
+            href="https://www.linkedin.com/in/venkatesh-mundkar-2487b91b3/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaLinkedin className="linkedin" />
+          </a>
+          <a
+            href="https://github.com/iMVenkateshMundkar"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <VscGithub className="github" />
+          </a>
+          <a
+            href="mailto:mundkarvenkatesh@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <CgMail className="email" />
+          </a>
+          <a
+            href="https://twitter.com/iMVenkateshM22"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Twitter className="twitter" />
+          </a>
+          <a href="tel:+917218469333" target="_blank" rel="noreferrer">
+            <BsFillTelephoneFill className="phone" />
+          </a>
+        </div>
+      </div>
+    </>
+  );
+};

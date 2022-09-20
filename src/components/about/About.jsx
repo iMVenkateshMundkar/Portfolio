@@ -1,37 +1,100 @@
-import "./about.scss";
-
-export default function About() {
+import React from "react";
+import "./About.css";
+import { Type } from "./Type";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import EmailIcon from "@material-ui/icons/Email";
+import PhoneIcon from "@material-ui/icons/Phone";
+import { Twitter } from "@material-ui/icons";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import DescriptionIcon from "@material-ui/icons/Description";
+import PublicIcon from "@material-ui/icons/Public";
+import { Introduction } from "./Introduction";
+import { Timeline } from "./Timeline";
+import { Techstacks } from "./Techstacks";
+export const About = () => {
   return (
-    <div className="about" id="about">
-      <div className="imgDiv">
-        <img src="assets/venkatesh.png" />
-      </div>
-      <div className="aboutPara">
-        <h1 className="mainHeading">About Me</h1>
-        <p>
-          Hey, I am Venkatesh Mundkar. I'm an aspiring Web Developer. I have
-          a passion for building amazing web applications.
+    <>
+      <div className="about center">
+        <h1 data-aos="fade-right">
+          Hi, I am <span className="about__name">Venkatesh Mundkar</span>
+        </h1>
+        <Type />
+        <p className="about__desc" data-aos="fade-right">
+          A Full Stack Developer who loves solving problems and building
+          projects. I am equipped with a variety of technologies and tools to
+          help me build the best possible product.
         </p>
-        <p>
-          I am skilled in developing web apps using MERN stack and I've build
-          many amazing projects which you can see below.
-        </p>
-        <p>Apart from coding, I love:</p>
-        <ul className="hobbiesUl">
-          <li>Playing Cricket</li>
-          <li>Solving DSA Problems</li>
-          <li>Building Web Applications</li>
-        </ul>
-        <h4 className="resumeLink">
+        <div className="about__contact center">
           <a
-            rel="noreferrer"
+            href="https://github.com/iMVenkateshMundkar"
+            aria-label="github"
             target="_blank"
-            href="https://drive.google.com/file/d/1UpUQ1tWHJAx6bBQlh6v6BucMNZ91_r1C/view?usp=sharing"
+            rel="noreferrer"
+            className="link link--icon"
           >
-            Resume
+            <GitHubIcon />
           </a>
-        </h4>
+          <a
+            href="mailto:mundkarvenkatesh@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="github"
+            className="link link--icon"
+          >
+            <EmailIcon />
+          </a>
+          <a
+            href="tel:+917218469333"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="github"
+            className="link link--icon"
+          >
+            <PhoneIcon />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/venkatesh-mundkar-2487b91b3/"
+            aria-label="github"
+            className="link link--icon"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <LinkedInIcon />
+          </a>
+          <a
+            href="https://twitter.com/iMVenkateshM22"
+            aria-label="github"
+            className="link link--icon"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Twitter />
+          </a>
+          {/* <a
+            href="https://www.facebook.com/imbickydutta"
+            aria-label="github"
+            className="link link--icon"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FacebookIcon />
+          </a>
+          <a
+            href="https://goo.gl/maps/QyNYmATTCdkq1Af69"
+            aria-label="github"
+            className="link link--icon"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <PublicIcon />
+          </a> */}
+        </div>
       </div>
-    </div>
+      <Introduction />
+      <section id="#skills">
+        <Techstacks />
+      </section>
+    </>
   );
-}
+};
