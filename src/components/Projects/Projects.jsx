@@ -43,15 +43,17 @@ export const Projects = () => {
             <div className="project_information" data-aos="fade-right">
               <h2>Shopping Mart</h2>
               <p>
-              Shopping Mart is an ecommerce platform where users can find different kinds of hair products of various brands. User can create an account and login into it. User can check orders ordered by him. User can add addresses and remove them.
+                Shopping Mart is an ecommerce platform where users can find different kinds of hair products of various brands. User can create an account and login into it. User can check orders ordered by him. User can add addresses and remove them.
               </p>
               <div>
-              <SiExpress />
-                <SiMongodb />
-              <FaReact />
+                <SiHtml5 />
+                <SiCss3 />
                 <SiNodedotjs />
-                <SiRedux/>
-                
+                <FaReact />
+                <SiRedux />
+                <SiExpress />
+                <SiMongodb />
+
               </div>
               <div>
                 <a
@@ -89,12 +91,12 @@ export const Projects = () => {
             <div className="project_information" data-aos="fade-right">
               <h2>PaytmMall Clone</h2>
               <p>
-              It was a team project.We implemented some product sorting and filtering features, We used local storage for data handling and implemented signup, login, individual product page, category-wise page, address input, cart, checkout page, etc.
+                It was a team project.We implemented some product sorting and filtering features, We used local storage for data handling and implemented signup, login, individual product page, category-wise page, address input, cart, checkout page, etc.
               </p>
               <div>
-              <SiHtml5 />
-              <SiCss3 />
-              <SiJavascript />
+                <SiHtml5 />
+                <SiCss3 />
+                <SiJavascript />
               </div>
               <div>
                 <a
@@ -132,7 +134,7 @@ export const Projects = () => {
             <div className="project_information" data-aos="fade-right">
               <h2>Fabindia Clone</h2>
               <p>
-              FabIndia is an e-commerce platform where user can buy clothes and home garment.In it there are many category of clothes. User can add as many as products in his/her cart and buy them.
+                FabIndia is an e-commerce platform where user can buy clothes and home garment.In it there are many category of clothes. User can add as many as products in his/her cart and buy them.
               </p>
               <div>
                 <SiHtml5 />

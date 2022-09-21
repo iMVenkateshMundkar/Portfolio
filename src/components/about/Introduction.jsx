@@ -28,7 +28,7 @@ export const Introduction = () => {
                 <span className="different"> Nanded, Maharashtra</span>. I
                 have completed my graduation in Computer Sciense & Engineering from
                 Pimpri Chinchwad College Of Engineering.
-                I am focused and quick learning full-stack web developer with a passion for developing innovative programs. Skilled at reading and writing codes using viable inputs and outputs. I am proficient in remote collaboration, and committed to achieving organizational goals.
+                A Full-stack web developer with strong technical skills. An impactful team player with creative problem - solving skills and willing to build user - friendly products. Looking for a role as a developer to implement diverse experience and be a part of a growth-oriented environment.
               </h4>
               <h4>Some of my interests apart form Coding :</h4>
               <h4 className="different">
